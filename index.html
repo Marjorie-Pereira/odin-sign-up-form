@@ -27,76 +27,85 @@
           <h1>Sign up to whatever</h1>
         </div>
 
-        <form action="/some-page" method="post">
+        <form action="form-sent.html" method="get">
           <div class="form-content">
             <h2>Fill in the form with required information.</h2>
             <p>Required fields are marked with asterisk (*)</p>
             <div class="fields">
               <div class="field-column">
                 <div class="form-field">
-                  <label for="first-name">First Name</label>
+                  <label for="first-name">First Name *</label>
                   <input
                     type="text"
                     id="first-name"
                     name="first-name"
                     placeholder="Your first name"
+                    required
                   />
                 </div>
                 <div class="form-field">
-                  <label for="email">Email</label>
+                  <label for="email">Email *</label>
                   <input
                     type="email"
                     id="email"
                     name="user-email"
                     placeholder="example@example.com"
+                    required
                   />
                 </div>
                 <div class="form-field">
                   <label for="password"
-                    >Password (at least 8 characters long)</label
+                    >Password * (at least 8 characters long)</label
                   >
                   <input
+                    required
                     type="password"
                     id="password"
                     name="user-password"
                     placeholder="Must have at least 8 characters"
+                    minlength="8"
                   />
                 </div>
               </div>
               <div class="field-column">
                 <div class="form-field">
-                  <label for="last-name">Last Name</label>
+                  <label for="last-name">Last Name *</label>
                   <input
                     type="text"
                     id="last-name"
                     name="last-name"
                     placeholder="Your last name"
+                    required
                   />
                 </div>
                 <div class="form-field">
-                  <label for="phone">Phone number</label>
+                  <label for="phone">Phone number *</label>
                   <input
                     type="tel"
                     inputmode="numeric"
                     id="phone"
                     name="phone"
+                    required
                     placeholder="Your phone number"
                   />
                 </div>
                 <div class="form-field">
-                  <label for="confirm-passwd">Confirm Password</label>
+                  <label for="confirm-passwd">Confirm Password *</label>
                   <input
                     type="password"
                     id="confirm-passwd"
                     name="confirm-passwd"
                     placeholder="Type password again"
+                    minlength="8"
+                    required
                   />
                 </div>
               </div>
             </div>
           </div>
           <div class="form-interaction">
-            <button>Create Account</button>
+            <button type="submit">Create Account</button>
+
             <p>Aleready have an account? <span class="login">Log in</span></p>
           </div>
         </form>
