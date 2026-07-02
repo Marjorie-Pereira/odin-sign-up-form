@@ -2,4 +2,47 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+main {
+  display: flex;
+  background-color: #f3eeee;
+  height: 100vh;
+}
+
+.banner {
+  width: 40%;
+  position: relative;
+  display: flex;
+  text-align: center;
+}
+
+.banner img {
+  width: 100%;
+}
+
+.banner::before {
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.banner h1 {
+  position: absolute;
+  color: white;
+  top: 50%; 
+  width: 100%;
+}
+
+.banner p {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  width: 100%;
 }
