@@ -90,11 +90,12 @@ input {
   margin-top: 5px;
 }
 
-input:valid {
+input:focus {
+  outline: none;
   border-color: blue;
 }
 
-:invalid {
+:user-invalid {
   border-color: red;
 }
 
